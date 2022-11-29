@@ -20,9 +20,14 @@
               <img style="border-radius: 7px" src="../assets/img/side-3.png" alt="">
             </div>
           </div>
-          <div class="kursi mx-4">
-            <img style="border-radius: 15px;" class="" src="../assets/img/chair.png" alt="">
+          <div class=" kursi mx-4">
+            <img  style="width: 560px; height: auto;"
+              :src="require('@/assets/img/' + imageLink + '.png')"
+              alt=""
+              id="imgParent"
+            />
           </div>
+          
           <div class="deskripsi"></div>
         </div>
         <div class="content-dua">
@@ -41,7 +46,8 @@
 
 <script>
     export default {
-        name: 'galeriComponent'
+        name: 'galeriComponent',
+        props: ['imageLink']
     }
 </script>
 

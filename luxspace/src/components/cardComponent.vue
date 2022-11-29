@@ -1,6 +1,6 @@
 <template>
         <div style="border-radius: 15px" class="bg-white p-3 justify-content-around pt-0 pb-3">
-            <a href="#" class="chairs">
+            <a href="#" @click.prevent="$emit('changePicture', cardImage)" class="chairs">
                 <img style="border-radius: 10px" class="img" :src="require('@/assets/img/' + cardImage + '.png')" alt="chairs">
             </a>
             <p class="font-weight-bold mt-5 my-0">{{ cardTitle }}</p>

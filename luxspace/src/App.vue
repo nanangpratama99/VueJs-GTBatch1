@@ -1,28 +1,17 @@
 <template>
   <div id="app">
     <!--------------------------- Navbar --------------------------->
-    <Navbar>
-    </Navbar>
-
+    <Navbar></Navbar>
     <!--------------------------- Bread Crumb --------------------------->
-    <breadCrumb>
-    </breadCrumb>
-
+    <breadCrumb></breadCrumb>
     <!------------------------- Galeri Komponent ------------------------->
-    <galeriComponentVue>
-    </galeriComponentVue>
-
+    <galeriComponentVue :imageLink="img"></galeriComponentVue>
     <!----------------------- Slidebar Component ----------------------->
-    <sliderComponentVue>
-    </sliderComponentVue>
-
+    <sliderComponentVue @changePicture="ambilDariSlider"></sliderComponentVue>
     <!-------------------------- Footer Component -------------------------->
-    <footerComponentVue>
-    </footerComponentVue>
-
+    <footerComponentVue></footerComponentVue>
     <!-- Copyritht Component -->
-    <copyrightComponentVue>
-    </copyrightComponentVue>
+    <copyrightComponentVue></copyrightComponentVue>
 </div>
 </template>
 
@@ -43,6 +32,20 @@ export default {
     sliderComponentVue,
     footerComponentVue,
     copyrightComponentVue
+  },
+
+  // Return nilai slider
+  data(){
+    return{
+      img : "chair"
+    }
+  },
+
+  // Function ambil data Slider
+  methods : {
+    ambilDariSlider : function(cardImage1){
+      this.img = cardImage1
+    }
   }
 }
 </script>

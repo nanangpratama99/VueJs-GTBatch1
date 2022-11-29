@@ -45,7 +45,8 @@ export default {
           :key="index"
           :card-title="item"
           :card-price="arrCardPrice[index]"
-          :card-image="arrCardImage[index]"></Card>
+          :cardImage="arrCardImage[index]" @changePicture="changePictureFunc">
+        </Card>          
       </div>
   </div>
 </template>
@@ -57,6 +58,15 @@ export default {
   components : {
       Card
   },
+
+  // Method/Function
+methods : {
+  changePictureFunc : function(cardImage){
+    this.$emit('changePicture', cardImage)
+  }
+},
+
+// Return data dari Slide
   data() {
       return{
           arrCardTitle : ["Cangkir Mauttie", "Saman Kakka", "Lino Dino", "Syail Ammeno"],
