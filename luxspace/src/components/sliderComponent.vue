@@ -60,7 +60,7 @@ export default {
   data() {
       return{
           arrCardTitle : ["Cangkir Mauttie", "Saman Kakka", "Lino Dino", "Syail Ammeno"],
-          arrCardPrice : ["89.300.000", "14.500.000", "IDR 22.000.000", "IDR 12.000.000"],
+          arrCardPrice : ["89.300.000", "14.500.000", "22.000.000", "IDR 12.000.000"],
           arrCardImage : ["chair-4", "chair-3", "chair-2", "chair-1"]
       }
   }

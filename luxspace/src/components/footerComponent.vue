@@ -1,6 +1,6 @@
 <template>
     <!-------------------------- Footer -------------------------->
-<footer>
+<footer >
   <div class="text-center my-5">
     <img src="../assets/img/logo.png" alt="">
   </div>

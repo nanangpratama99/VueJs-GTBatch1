@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import Navbar from './components/navbarComponent.vue'
-import breadCrumb from './components/breadcrumbComponent.vue'
+import Navbar from './components/navbarComponent.vue';
+import breadCrumb from './components/breadcrumbComponent.vue';
 import galeriComponentVue from './components/galeriComponent.vue';
 import sliderComponentVue from './components/sliderComponent.vue';
 import footerComponentVue from './components/footerComponent.vue';
@@ -56,6 +56,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 } */
-
-
 </style>

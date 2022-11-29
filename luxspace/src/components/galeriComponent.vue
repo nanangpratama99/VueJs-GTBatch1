@@ -30,7 +30,7 @@
           <p>IDR 12.000.000</p>
           <button class="mb-3 btn btn-warning text-dark"><img class="btn-cart" src="../assets/img/cart-check.svg" alt="">&nbsp;&nbsp;Add to Cart</button>
           <hr>
-          <p class="about-product mt-4">About Product</p>
+          <p class="about-product mt-4"><strong>About Product</strong></p>
           <p class="about-satu">Tailor to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, jetty has been influenced by timeless 1950s style.</p>
           <p class="about-dua">Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>
           <p></p>
@@ -44,3 +44,10 @@
         name: 'galeriComponent'
     }
 </script>
+
+<style scoped>
+  button {
+    border-radius: 50px;
+  }
+
+</style>
