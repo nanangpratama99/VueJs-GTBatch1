@@ -3,25 +3,25 @@
       <!-------------------------- konten1 -------------------------->
       <div class="container d-flex align-item-center mt-5">
         <div class="content-satu d-flex">
-          <div class="thubnail-item d-flex flex-column justify-content-between">
-            <div class="item-1 d-flex">
+          <div class="thubnail-item d-flex flex-column">
+            <div style="border-radius: 10px" class="item-1 d-flex kursi mx-4 shadow p-1 mb-3 mt-1 bg-white">
               <img style="border-radius: 7px" src="../assets/img/side-1.png" alt="">
             </div>
-            <div class="item-2">
+            <div style="border-radius: 10px" class="item-2 kursi mx-4 shadow p-1  bg-white mb-3">
               <img style="border-radius: 7px" src="../assets/img/side-3.png" alt="">
             </div>
-            <div class="item-3">
+            <div style="border-radius: 10px" class="item-3 kursi mx-4 shadow p-1  bg-white mb-3">
               <img style="border-radius: 7px" src="../assets/img/side-2.png" alt="">
             </div>
-            <div class="item-4">
+            <div style="border-radius: 10px" class="item-4 kursi mx-4 shadow p-1  bg-white mb-3">
               <img style="border-radius: 7px" src="../assets/img/side-1.png" alt="">
             </div>
-            <div class="item-5">
+            <div style="border-radius: 10px" class="item-5 kursi mx-4 shadow p-1  bg-white mb-3">
               <img style="border-radius: 7px" src="../assets/img/side-3.png" alt="">
             </div>
           </div>
-          <div class=" kursi mx-4">
-            <img  style="width: 560px; height: auto;"
+          <div style="border-radius: 15px" class="kursi mx-4 shadow p-3 mb-5 bg-white">
+            <img  style="width: 560px; height: 609px; border-radius: 15px;"
               :src="require('@/assets/img/' + imageLink + '.png')"
               alt=""
               id="imgParent"

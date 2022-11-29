@@ -45,7 +45,7 @@ export default {
           :key="index"
           :card-title="item"
           :card-price="arrCardPrice[index]"
-          :cardImage="arrCardImage[index]" @changePicture="changePictureFunc">
+          :cardImage="arrCardImage[index]" @changePicture="changePictureFunc" >
         </Card>          
       </div>
   </div>
