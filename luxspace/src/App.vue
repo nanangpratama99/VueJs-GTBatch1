@@ -1,56 +1,22 @@
 <template>
   <div id="app">
-    <!--------------------------- Navbar --------------------------->
-    <Navbar></Navbar>
-    <!--------------------------- Bread Crumb --------------------------->
-    <breadCrumb></breadCrumb>
-    <!------------------------- Galeri Komponent ------------------------->
-    <galeriComponentVue :imageLink="img"></galeriComponentVue>
-    <!----------------------- Slidebar Component ----------------------->
-    <sliderComponentVue @changePicture="ambilDariSlider"></sliderComponentVue>
-    <!-------------------------- Footer Component -------------------------->
-    <footerComponentVue></footerComponentVue>
-    <!-- Copyritht Component -->
-    <copyrightComponentVue></copyrightComponentVue>
+    <!-- Page Detail -->
+    <router-view></router-view>
 </div>
 </template>
 
 <script>
-import Navbar from './components/navbarComponent.vue';
-import breadCrumb from './components/breadcrumbComponent.vue';
-import galeriComponentVue from './components/galeriComponent.vue';
-import sliderComponentVue from './components/sliderComponent.vue';
-import footerComponentVue from './components/footerComponent.vue';
-import copyrightComponentVue from './components/copyrightComponent.vue';
+// import Detail from './pages/Detail.vue'
 
 export default {
   name: 'App',
-  components: {
-    Navbar,
-    breadCrumb,
-    galeriComponentVue,
-    sliderComponentVue,
-    footerComponentVue,
-    copyrightComponentVue
-  },
-
-  // Return nilai slider
-  data(){
-    return{
-      img : "chair"
-    }
-  },
-
-  // Function ambil data Slider
-  methods : {
-    ambilDariSlider : function(cardImage1){
-      this.img = cardImage1
-    }
+  // components: {
+  //   Detail
+  // }
   }
-}
 </script>
 
-<style>
+<style lang="scss-loader" scoped>
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
