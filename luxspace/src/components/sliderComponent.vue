@@ -37,48 +37,61 @@ export default {
 </script> -->
 
 <template>
-  <div class="p-5 mt-5 " id="bg-card">
-      <h3>Completed Your Room</h3>
-      <h3>With What We Designed</h3>
-      <div class="d-flex justify-content-between mt-4">
-          <Card v-for="(item, index) in arrCardTitle"
-          :key="index"
-          :card-title="item"
-          :card-price="arrCardPrice[index]"
-          :cardImage="arrCardImage[index]" @changePicture="changePictureFunc" >
-        </Card>          
-      </div>
+  <div class="p-5 mt-5" id="bg-card">
+    <h3>Completed Your Room</h3>
+    <h3>With What We Designed</h3>
+    <div class="d-flex justify-content-between mt-4">
+      <Card
+        v-for="(item, index) in arrCardTitle"
+        :key="index"
+        :card-title="item"
+        :card-price="arrCardPrice[index]"
+        :cardImage="arrCardImage[index]"
+        @changePicture="changePictureFunc"
+      >
+      </Card>
+    </div>
   </div>
 </template>
 
 <script>
-import Card from './cardComponent.vue';
+import Card from "./cardComponent.vue";
 export default {
-  name : 'sliderComponent',
-  components : {
-      Card
+  name: "sliderComponent",
+  components: {
+    Card,
   },
 
   // Method/Function
-methods : {
-  changePictureFunc : function(cardImage){
-    this.$emit('changePicture', cardImage)
-  }
-},
+  methods: {
+    changePictureFunc: function (cardImage) {
+      this.$emit("changePicture", cardImage);
+    },
+  },
 
-// Return data dari Slide
+  // Return data dari Slide
   data() {
-      return{
-          arrCardTitle : ["Cangkir Mauttie", "Saman Kakka", "Lino Dino", "Syail Ammeno"],
-          arrCardPrice : ["89.300.000", "14.500.000", "22.000.000", "IDR 12.000.000"],
-          arrCardImage : ["chair-4", "chair-3", "chair-2", "chair-1"]
-      }
-  }
-}
+    return {
+      arrCardTitle: [
+        "Cangkir Mauttie",
+        "Saman Kakka",
+        "Lino Dino",
+        "Syail Ammeno",
+      ],
+      arrCardPrice: [
+        "89.300.000",
+        "14.500.000",
+        "22.000.000",
+        "IDR 12.000.000",
+      ],
+      arrCardImage: ["chair-4", "chair-3", "chair-2", "chair-1"],
+    };
+  },
+};
 </script>
 
 <style scoped>
 #bg-card {
-    background-color: rgba(242, 242, 242, 0.655);
+  background-color: rgba(242, 242, 242, 0.655);
 }
 </style>
