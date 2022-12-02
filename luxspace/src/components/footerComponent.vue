@@ -1,6 +1,7 @@
 <template>
-    <!-------------------------- Footer -------------------------->
-<footer >
+  <div>
+    <hr>
+<footer>
   <div class="text-center my-5">
     <img src="../assets/img/logo.png" alt="">
   </div>
@@ -25,17 +26,19 @@
         <a class="p-0 nav-link text-dark" href="">For Developer</a>
       </div>
       <div>
-  <h5>Special Letter</h5>
-    <form class="form-inline">
-      <input class="form-control mr-sm-3 bg-warning" type="email" placeholder="Your email address" aria-label="Search">
-      <button class="btn btn-warning pt-1">
-        <img src="../assets/img/send.svg" alt="">
-      </button>
-    </form>
+        <h5>Special Letter</h5>
+        <form class="form-inline">
+          <input class="form-control mr-sm-3 bg-warning" type="email" placeholder="Your email address"
+            aria-label="Search">
+          <button class="btn btn-warning pt-1">
+            <img src="../assets/img/send.svg" alt="">
+          </button>
+        </form>
       </div>
     </div>
   </div>
 </footer>
+  </div>
 </template>
 
 <script>
